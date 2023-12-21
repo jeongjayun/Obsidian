@@ -17,3 +17,4 @@ class Solution {
 	}
 // num_str.charAt(i)-’0’ = 진짜 정수로 변환 가능 / 아니면 아스키코드 문자숫자 나옴;
 ```
+[[Int 형변환]]
