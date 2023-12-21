@@ -46,6 +46,8 @@ class Solution {
 
 //소수점 아래 버림해야 정답임
 ```
+
+[[Math.round()]],[[Math.floor()]]
 # Double -> Long
 ## (new Double(doubleFormat)).longValue();
 
