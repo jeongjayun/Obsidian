@@ -11,3 +11,6 @@ BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 String s = bf.readLine(); // String으로 데이터 받음
 int i = Integer.parseInt(bf.readLine()); // Int로 형변환 필요
 ```
+
+⭐️ **readLine()**;
+메서드 사용 시 <u>반환값을 String으로 고정</u>하기 때문에 다른 형으로 받으려면 반드시 형변환이 필요하다. 
