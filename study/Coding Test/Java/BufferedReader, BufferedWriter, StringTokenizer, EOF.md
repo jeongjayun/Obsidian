@@ -1,5 +1,4 @@
 >scanner, System.out.println(); 보다 속도 측면에서 훨씬 빠름.
->
 >입력된 데이터가 바로 전달되지 않고 버퍼를 거쳐 전달되므로 데이터 처리 효율성을 높이고 많은 양의 데이터를 처리할 때 유리하다.
 
 # BufferdReader
@@ -29,4 +28,6 @@ import java.io.IOException;
 public static void main(String[] args) throws IOException {}
 ```
 
-⭐️⭐️ 하지만 BufferedReader는 **Enter만 경계로 인식**하고 받은 데이터를 String으로 고정하기 때문에 입력받은 데이터를 가공하는 작업이 필요한 경우가 많다.
+⭐️⭐️ 하지만 BufferedReader는 **Enter만 경계로 인식**하고 받은 데이터를 String으로 고정하기 때문에 입력받은 <u>데이터를 가공하는 작업이 필요한 경우가 많다</u>.
+
+# BufferedWriter
