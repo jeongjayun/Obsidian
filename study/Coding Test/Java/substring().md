@@ -10,6 +10,8 @@ public String substring(int startIndex) // 처음부터 끝까지
 public String substring(int startIndex, endIndex) // 범위 지정
 ```
 
+## 프로그래머스
+
 https://school.programmers.co.kr/learn/courses/30/lessons/181907
 
 ```java
