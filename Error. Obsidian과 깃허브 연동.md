@@ -5,3 +5,4 @@
 
 # 해결
 1. SSH키를 만든 뒤 SSH 통해 깃 클론하여 로컬 레포지토리 다시 만듬.
+2. https://scshim.tistory.com/565 SSH 
