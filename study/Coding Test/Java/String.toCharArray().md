@@ -9,5 +9,7 @@ char[] charArr = s1.toCharArray();
 ```
 
 1. 추가로 char형 배열을 합쳐서 하나의 String(문자열)로 만들 수 있다.
-
+```java
+//how to use method
+String s2 = new String(charArr);
 ```
