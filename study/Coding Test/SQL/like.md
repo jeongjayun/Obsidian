@@ -29,3 +29,8 @@ SELECT 컬럼명 FROM 테이블 WHERE 컬럼명 LIKE'[^A]'
 SELECT 컬럼명 FROM 테이블 WHERE 컬럼명 LIKE '[ABC]'
 SELECT 컬럼명 FROM 테이블 WHERE 컬럼명 LIKE '[A-C]'
 ```
+
+## 프로그래머스
+#프로그래머스 
+https://school.programmers.co.kr/learn/courses/30/lessons/151137
+
