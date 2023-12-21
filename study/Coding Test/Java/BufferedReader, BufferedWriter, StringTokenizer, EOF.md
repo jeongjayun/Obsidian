@@ -16,5 +16,17 @@ int i = Integer.parseInt(bf.readLine()); // Int로 형변환 필요
 메서드 사용 시 <u>반환값을 String으로 고정</u>하기 때문에 **다른 형으로 받으려면 반드시 형변환**이 필요하다.
 <font color="#c0504d">무조건 예외발생하기 때문에 try & cath 또는 throws IOException으로 처리</font>한다.
 
+
+```java
+throw 이용 시
+
+(1) 클래스를 import해주어야 한다. 
+
+import java.io.IOException; 
+
+(2) main 클래스 옆에 throws IOException를 작성한다. 
+
+public static void main(String[] args) throws IOException {}
 ```
-```
+
+⭐️⭐️ 하지만 BufferedReader는 **Enter만 경계로 인식**하고 받은 데이터를 String으로 고정하기 때문에 입력받은 데이터를 가공하는 작업이 필요한 경우가 많다.
