@@ -5,5 +5,13 @@
 
 ```java
 class Solution {
-	public int solution(String num_str) { int answer = 0; for(int i=0; i<num_str.length(); i++){ answer += num_str.charAt(i)-'0'; } return answer; } } * num_str.charAt(i)-’0’ = 진짜 정수로 변환 가능 / 아니면 아스키코드 문자숫자 나옴;
+	public int solution(String num_str) {
+		int answer = 0;
+		
+		for(int i=0; i<num_str.length(); i++){
+			 answer += num_str.charAt(i)-'0';
+			  }
+		return answer; }
+	}
+// num_str.charAt(i)-’0’ = 진짜 정수로 변환 가능 / 아니면 아스키코드 문자숫자 나옴;
 ```
