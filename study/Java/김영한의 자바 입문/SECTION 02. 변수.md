@@ -153,6 +153,58 @@ WHY ? 컴퓨터에서 메모리는 여러 시스템이 함께 사용하는 공�
 >컴파일 에러 = 오류를 빨리 명확하게 찾을 수 있어 좋은 에러.<br>
 >런타임 에러 = 오류를 찾기 어려워 나쁜 에러.
 
+# 변수 타입 1
+데이터를 다루는 종류에 따라 다양한 타입이 존재함.
+## Var7
+```java
+package variable;  
+  
+public class Var7 {  
+    public static void main(String[] args) {  
+        int a = 100; //정수  
+        double b = 10.5; //실수  
+        boolean c = true; //boolean : true / false 입력 가능  
+        char d = 'A'; // 문자 하나  
+        String e = "Hello Java"; // 문자열, 문자열을 다루기 위한 특별한 타입  
+  
+        System.out.println("a = " + a);  
+        System.out.println("b = " + b);  
+        System.out.println("c = " + c);  
+        System.out.println("d = " + d);  
+        System.out.println("e = " + e);  
+    }  
+}
+```
 
+## 변수 타입의 예
+- int
+- double
+- boolean : 참과 거짓을 판단하는 곳에서 사용.
+- char
+- String : 문자열을 다루는 특별한 타입.
 
+## 자신의 타입에 맞는 데이터 사용
+- 타입이 맞지 않는 값이 할당되면 컴파일 에러가 발생함.
+
+## 리터럴
+코드에서 개발자가 직접 적은 `100, 10.5, true, A, Hello Java` 를 프로그램 용어로 리터럴이라고 함.
+변수의 값은 변할 수 있지만 리터럴은 개발자가 직접 입력한 값으로 변하지 않는다. 그래서 보통 변수에 리터럴을 담아서 사용한다.
+
+# 변수타입 2
+## 숫자타입 = Var8
+```java
+package variable;  
+  
+public class Var8 {  
+    //정수  
+    byte b=127; // -128 ~ 127  
+    short s = 32767; // -32768 ~ 32767  
+    int i = 2147383647; // -21474683 ~ 2147483647 (20억)  
+    long l = 9223372036854775807L; // .... 숫자 끝에 L 꼭 붙여서 구분.  
+  
+    //실수  
+    float f = 10.0f; // f를 붙여줘야 함  
+    double d = 10.0; // float 보다 double 이 범위가 더 크다.  
+}
+```
 
