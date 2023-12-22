@@ -205,6 +205,10 @@ public class Var8 {
     //실수  
     float f = 10.0f; // f를 붙여줘야 함  
     double d = 10.0; // float 보다 double 이 범위가 더 크다.  
+    //float 보다 double 이 정밀도가 높다.
 }
 ```
+- 숫자가 클수록 메모리 공간을 많이 차지한다.
 
+### 리터럴 타입 지정
+- 정수 리터럴은 int 를 기본으로 사용.
