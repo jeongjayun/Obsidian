@@ -72,3 +72,42 @@ public class HelloJava { // HelloJava 클래스의 범위 시작
 	- // 기호로 시작함. 이 기호 이후의 모든 텍스트는 주석으로 처리.
 2. 여러 줄 주석 multiple line comment 
 	- '/*'로 시작하고 '*/' 로 끝난다. 이 사이의 모든 텍스트는 주석으로 처리한다.
+
+```java
+public class CommentJava {
+    public static void main(String[] args) {
+        System.out.println("hello java1"); //hello java1 을 출력합니다.
+        // System.out.println("hello java2"); //hello java2 을 출력합니다.
+        /*System.out.println("hello java3");
+        System.out.println("hello java4");*/
+    }
+}
+```
+
+# 자바란?
+## 자바 표준 스펙
+### 자바 표준 스펙과 구현
+![[Pasted image 20231222160437.png]]
+자바는 표준스펙과 구현으로 나눌 수 있다.
+- 자바 표준 스펙
+	- 자바는 이렇게 만들어야 한다는 설계도, 문서.
+	- 표준 스펙을 기반으로 여러 회사에서 실제 작동하는 자바를 만든다.
+	- 자바 표준 스펙은 자바 커뮤니티 프로세스를 통해 관리한다.
+- 다양한 자바 구현
+	- 여러 회사에서 자바 표준 스펙에 맞추어 실제 작동하는 자바 프로그램을 개발한다.
+	- 각각 장단점이 있음. (ex, Aamzon Corretto = AWS에 최적화 되어있음)
+	- 각 회사들은 대부분 다양한 OS에서 작동하는 버전의 자바도 함께 제공함.
+### 변경이 용이
+![[Pasted image 20231222160736.png]]
+
+### 컴파일과 실행
+![[Pasted image 20231222160802.png]]
+자바 프로글매은 컴파일과 실행단계를 거침
+- Hello.java와 같은 자바 소스코드를 개발자가 작성한다.
+- 자바 컴파일러를 사용하여 소스 코드를 컴파일한다.
+	- 자바가 제공하는 javac 프로글매을 사용한다.
+	- .java -> .class 파일이 생성된다.
+	- 자바 소스 코드를 바이트 코드로 변환하여 자바 가상 머신에서 더 빠르게 작동하기 위해 최적화하고 오류를 수정한다.
+- 자바 프로그램을 실행한다.
+	- 자바가 제공하는 java라는 프로그램을 사용한다.
+	- 자바가상머신(JVM이)
