@@ -8,3 +8,28 @@
 # 인텔리제이 설정
 - java : Oracle openjdk 21.0 ver
 
+# 자바 프로그램 실행
+## HelloJava
+
+```java
+public class HelloJava {
+    public static void main(String[] args) {
+        //main 메서드
+        System.out.println("Hello Java");
+    }
+}
+
+```
+
+### public class HelloJava
+- HelloJava를 클래스(class) 라고 함.
+- 파일명과 클래스 이름이 같아야 한다.
+- {} 블록을 사용해서 클래스의 시작과 끝을 나타낸다.
+
+### public static void main(String[] args) {
+- main 메서드.
+- 자바는 main(String[] args) 를 찾아서 프로그램을 시작한다.
+- {} 블록을 사용해서 메서드의 시작과 끝을 나타낸다.
+
+### System.out.println("Hello Java");
+- 자바는 문장이 끝날 때마다 ; 필수로 넣어 구분해줘야 한다.
