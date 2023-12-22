@@ -65,6 +65,41 @@ public class Var2 {
 - 변수 a 에 10이 들어가 있다면 자바는 실행 시점에 변수의 값을 읽어서 사용한다.
 	- `System.out.println(a)` // 변수 a의 값을 읽음
 	- `System.out.println(10)` // a의 값인 10으로 변경, 숫자 10 출력
-- 참고로 변수의 값은 반복해서 읽을 수 있다. 읽어서 값이 없어지진 않는다.
+- 참고로 변수의 값은 반복해서 읽을 수 있다. 읽어서 값이 없어지지 않는다.
 
 # 변수 값 변경
+## Var3
+```java
+package variable;  
+  
+public class Var3 {  
+    public static void main(String[] args) {  
+        int a; // 변수 선언  
+        a = 10; // 변수 초기화  
+        System.out.println("a = " + a);  
+        a = 50; // 변수 값 변경   
+System.out.println("a = " + a);  
+    }  
+}
+```
+프로그램은 한 줄씩 순서대로 실행된다.
+참고로 변수의 값은 변경하면 변수에 들어있던 기존 값은 삭제됨.
+
+# 변수 선언과 초기화
+## 변수 선언
+변수를 선언하면 컴퓨터의 메모리 공간을 확보하여 데이터를 저장할 수 있다.
+
+## Var4
+```java
+package variable;  
+  
+public class Var4 {  
+    public static void main(String[] args) {  
+        int a;  
+        int b;  
+          
+        int c, d;  
+    }  
+}
+```
+@
