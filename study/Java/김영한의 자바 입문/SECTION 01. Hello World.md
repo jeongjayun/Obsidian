@@ -23,16 +23,16 @@ public class HelloJava {
 ### public class HelloJava
 - HelloJava를 클래스(class) 라고 함.
 - 파일명과 클래스 이름이 같아야 한다.
-- {} 블록을 사용해서 클래스의 시작과 끝을 나타낸다.
+- `{}` 블록을 사용해서 클래스의 시작과 끝을 나타낸다.
 
 ### public static void main(String[] args) {
 - main 메서드.
-- 자바는 main(String[] args) 를 찾아서 프로그램을 시작한다.
-- {} 블록을 사용해서 메서드의 시작과 끝을 나타낸다.
+- 자바는 `main(String[] args)` 를 찾아서 프로그램을 시작한다.
+- `{}` 블록을 사용해서 메서드의 시작과 끝을 나타낸다.
 
 ### System.out.println("Hello Java");
-- System.out.println() : 값을 콘솔에 출력하는 기능.
-- "Hello Java" : 문자열을 사용할 때 "(쌍따옴표) 를 사용한다. 
+- `System.out.println()` : 값을 콘솔에 출력하는 기능.
+- "Hello Java" : 문자열을 사용할 때 `"(쌍따옴표)` 를 사용한다. 
 - 자바는 문장이 끝날 때마다 ; 필수로 넣어 구분해줘야 한다.
 
 #### 참고 : 괄호
@@ -43,7 +43,7 @@ public class HelloJava {
 ### 실행과정
 1. HelloJava 프로그램 실행
 2. 시작점인 main() 메서드를 실행
-3. System.out.println(); 만나고 문자열 출력
+3. `System.out.println();` 만나고 문자열 출력
 4. main() 메서드의 {} 블록의 끝에서 프로그램 종료.
 
 ```java
@@ -69,9 +69,9 @@ public class HelloJava { // HelloJava 클래스의 범위 시작
 
 ## 주석의 종류
 1. 한줄 주석 single line comment
-	- // 기호로 시작함. 이 기호 이후의 모든 텍스트는 주석으로 처리.
+	- `//` 기호로 시작함. 이 기호 이후의 모든 텍스트는 주석으로 처리.
 2. 여러 줄 주석 multiple line comment 
-	- '/*'로 시작하고 '*/' 로 끝난다. 이 사이의 모든 텍스트는 주석으로 처리한다.
+	- `'/*'`로 시작하고 `'*/'` 로 끝난다. 이 사이의 모든 텍스트는 주석으로 처리한다.
 
 ```java
 public class CommentJava {
@@ -119,3 +119,10 @@ public class CommentJava {
 ![[Pasted image 20231222161627.png]]
 - 자바 프로그램은 자바가 설치된 모든 OS에서 실행할 수 있음.
 - 자바 개발자는 특정 OS에 맞추어 개발하지 않아도 됨.
+
+### 자바 개발과 운영환경
+![[Pasted image 20231222162148.png]]
+- 개발할 때 자바와 서버에서 실행할 때 다른 자바를 사용할 수 있다.
+- 개발자들은 개발의 편의를 위해 윈도우나 Mac OS를 주로 사용한다.
+- 서버는 주로 리눅스 사용 / 만약 AWS 사용한다면 아마존Corretto 자바를 AWS 리눅스 서버에 설치하면 된다.
+- 자바의 운영체제 독립성 덕분에 각각의 환경에 맞추어 자바를 설치하는 것이 가능하다.
