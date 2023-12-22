@@ -89,7 +89,7 @@ System.out.println("a = " + a);
 ## 변수 선언
 변수를 선언하면 컴퓨터의 메모리 공간을 확보하여 데이터를 저장할 수 있다.
 
-## Var4
+### Var4
 ```java
 package variable;  
   
@@ -102,4 +102,57 @@ public class Var4 {
     }  
 }
 ```
-@
+
+## 변수 초기화
+### Var5
+```java
+package variable;  
+  
+public class Var5 {  
+    public static void main(String[] args) {  
+        // 1. 변수 선언, 초기화 각각 따로  
+        int a;  
+        a = 1;  
+        System.out.println("a = " + a);  
+  
+        // 2. 변수 선언과 초기화를 한번에  
+        int b = 2;  
+        System.out.println("b = " + b);  
+  
+        // 3. 여러 변수를 한번에 선언, 초기화  
+        int c = 3, d = 4, e = 5;  
+        System.out.println("c = " + c);  
+        System.out.println("d = " + d);  
+        System.out.println("e = " + e);  
+    }  
+}
+```
+**변수는 초기화를 해야한다.**
+
+### Var6
+```java
+package variable;  
+  
+public class Var6 {  
+    public static void main(String[] args) {  
+        int a;  
+        System.out.println("a = " + a); // 컴파일 오류 발생
+    }  
+}
+```
+
+`java: variable a might not have been initialized`
+변수 초기화 되지 않으면 오류 발생함.
+WHY ? 컴퓨터에서 메모리는 여러 시스템이 함께 사용하는 공간으로 어떤 값들이 계속 저장된다. 변수를 선언하면 메모리상의 어떤 공간을 차지하고 사용하는데 기존에 어떤 값이 있었는지 아무도 모르면 이상한 값이 출력될 수 있다. -> 이런 문제를 예방하기 위해 변수 초기화 하도록 강제 된다.
+
+> **참고** : 지금 학습 중인 변수 = 지역변수, 
+> 지역변수는 개발자가 직접 초기화를 해줘야 한다.<br>
+> 나중에 배울 전역변수와 인스턴스 변수는 자바가 자동으로 초기화를 진행해준다.
+ 
+>**참고** : 컴파일 에러는 자바 문법에 맞지 않았을 때 발생하는 에러.<br>
+>컴파일 에러 = 오류를 빨리 명확하게 찾을 수 있어 좋은 에러.<br>
+>런타임 에러 = 오류를 찾기 어려워 나쁜 에러.
+
+
+
+
