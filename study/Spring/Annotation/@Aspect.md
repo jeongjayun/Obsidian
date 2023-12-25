@@ -1,4 +1,4 @@
-[[7. AOP]]
+#AOP  [[7. AOP]]
 
 >[!info] AOP 사용법 <Br>
 >	1. XML 사용
