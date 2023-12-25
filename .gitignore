@@ -1,5 +1,6 @@
 .DS_Store
 .obsidian/
-.template
-.personal
+.template/
+.personal/
+.project/
 .trash
