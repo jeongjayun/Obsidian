@@ -74,4 +74,4 @@ public class SpringAspect {
 
 ## @Around("execution(* aop_obj.*.*(..))")
 - 포인트컷 표현식
-- Around 어드바이스는 ProceedingJoinPoint를 파라미터로 받아 실행할 메소드의 시점을 조절하거나, 각종 정보들을 받아올 수 있습니다.
+- Around 어드바이스는 ProceedingJoinPoint를 파라미터로 받아 실행할 메소드의 시점을 조절하거나, 각종 정보들을 받아올 수 있다.
