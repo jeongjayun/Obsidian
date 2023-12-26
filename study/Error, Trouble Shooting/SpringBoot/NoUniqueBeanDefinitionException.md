@@ -122,3 +122,6 @@ Consider marking one of the beans as @Primary, updating the consumer to accept m
 
 
 # 해결
+
+# 참고
+[중복 오류 - 인프런](https://www.inflearn.com/questions/954940/중복-오류)
