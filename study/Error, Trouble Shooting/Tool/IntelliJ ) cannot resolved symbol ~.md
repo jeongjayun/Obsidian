@@ -10,4 +10,6 @@
 - 모든 캐시 삭제 후 프로젝트 실행.
 
 # 참고
-[Fetching Title#094n](https://kim-hoya.tistory.com/45)
+[cannot resolved symbol 해결하기](https://kim-hoya.tistory.com/45)
+- 안드로이드 스튜디오에서도 이 방법이 통하고 인텔리제이에서도 이 방법이 통한다.
+- 캐시가 잔뜩 쌓이면 언젠가는 뜬금없는 에러가 생기는구나 싶다.
