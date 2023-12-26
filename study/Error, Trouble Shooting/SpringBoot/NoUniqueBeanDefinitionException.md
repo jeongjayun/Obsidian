@@ -16,7 +16,7 @@ Consider marking one of the beans as @Primary, updating the consumer to accept m
 ```
 
 # 에러 상황
-- [김영한 핵심원리 강의](https://www.inflearn.com/course/lecture?courseSlug=스프링-핵심-원리-기본편&unitId=55374&category=questionDetail&tab=community&q=979646) 수강하며 따라하던 중에 김영한님과 다른 에러코드 발견.
+- [김영한 핵심원리 강의](https://www.inflearn.com/course/lecture?courseSlug=스프링-핵심-원리-기본편&unitId=55374&category=questionDetail&tab=community&q=979646) 수강하며 따라하던 중 오류 발생한 지점을 김영한님 따라 수정했음에도 계속 에러 발생해서 확인하니 다른 에러였음.
 ### 에러 코드 확인
 - Caused by: org.springframework.beans.factory.**NoUniqueBeanDefinitionException**.
 
