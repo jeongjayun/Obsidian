@@ -91,6 +91,7 @@ public class AppConfig {
 }
 ```
 
+### 시도 1
 ![](https://i.imgur.com/BKhec0T.png)
 AppConfig.class 에서 @Bean 등록 제거함.<br>
 @Component 와 @Bean 애노테이션 사용함으로 스프링빈이 2개가 등록됨.
@@ -111,7 +112,9 @@ Action:
 
 Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
 ```
+새로운 오류가 나오고 전엔 통과했던 싱글톤 테스트 오류가 발생함 ...
 
-새로운 오류가 나오고 아까 전엔 통과했던 싱글톤테스트 오류가 발생함 ...
+### 시도 2
+Action을 따라 **@Primary 어노테이션**을 둘 중에 하나에 적용했으나 같은 에러코드 반복.
 
 # 해결
