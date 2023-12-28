@@ -8,6 +8,7 @@ kanban-plugin: basic
 
 - [ ] [[VScode)python command not found]]
 - [ ] [[파이썬 기본문법]]
+- [ ] [[NoUniqueBeanDefinitionException]]
 
 
 
