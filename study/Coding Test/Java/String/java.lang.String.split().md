@@ -46,3 +46,42 @@ for문 돌려 꺼낼 필요 없이 배열에 바로 접근하여 가져올 수 �
 - limit : 분류할 문자열의 수. 분류할 수 있는 단어가 10개인데 limit가 5이면 5개만 구분하고 나머지는 통으로 출력한다.
 
 ### 예제
+```java
+public class split {  
+    public static void main(String[] args) {  
+        String str1 = "phone;name;id;pwd";  
+        String[] words1 = str1.split(";", 0);  
+        String[] words2 = str1.split(";", 2);  
+        System.out.println("0일 때 : ");  
+        for (String word : words1) {  
+            System.out.println(word);  
+        }  
+  
+        System.out.println("\r\n2일 때 : ");  
+        for (String word : words2) {  
+            System.out.println(word);  
+        }  
+    }  
+}
+```
+
+![](https://i.imgur.com/GvbeL9V.png)
+
+# 1018
+#코드업 #Java #기초100제 
+[[기초-입출력] 시간 입력받아 그대로 출력하기(설명)](https://codeup.kr/problem.php?id=1018)
+
+```java
+package codeup;  
+  
+import java.util.Scanner;  
+  
+public class no1018 {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+        String str = scanner.nextLine();  
+        String[] S = str.split(":");  
+        System.out.println(S[0] + ":" + S[1]);  
+    }  
+}
+```
