@@ -4,7 +4,7 @@ kanban-plugin: basic
 
 ---
 
-## 미완료 페이지 모음
+## 탐정 사무소에 온 의뢰들
 
 - [ ] [[VScode)python command not found]]
 - [ ] [[파이썬 기본문법]]
