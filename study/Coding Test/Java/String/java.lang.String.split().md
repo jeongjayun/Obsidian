@@ -4,6 +4,8 @@
 # 사용법
 ##  public String split(String regex)
 - regex : 문자열을 구분하기 위한 정규 표현
+
+### 예제 1 반복문 사용
 ```java
 public class split {  
     public static void main(String[] args) {  
@@ -20,5 +22,27 @@ public class split {
 <br>
 공백을 구분하여 배열에 담은 후 출력한다.
 
+### 예제 2 하나씩 잘라서 배열에 입력
+```java
+public class split {  
+    public static void main(String[] args) {      
+        String str2 = "phone;;name;id;pwd";  
+        String word1 = str2.split(";")[0];  
+        String word2 = str2.split(";")[1];  
+        String word3= str2.split(";")[2];  
+  
+        System.out.println("word1 = " + word1);  
+        System.out.println("word2 = " + word2);  
+        System.out.println("word3 = " + word3);  
+    }  
+}
+```
+![](https://i.imgur.com/2ReIVR0.png)
+<br>
+for문 돌려 꺼낼 필요 없이 배열에 바로 접근하여 가져올 수 있다. 잘랐는데 내용이 없으면 공백을 반환한다.
+
+
 ## public String split(String regex, int limit)
 - limit : 분류할 문자열의 수. 분류할 수 있는 단어가 10개인데 limit가 5이면 5개만 구분하고 나머지는 통으로 출력한다.
+
+### 예제
