@@ -47,13 +47,16 @@ SELECT * FROM Meals CROSS JOIN Drinks;
 ![](https://i.imgur.com/fmnOkeg.png)
 
 
-# 프로그래머스 &&문제제목&&
+# 프로그래머스 조건에 맞는 도서와 저자 리스트 출력하기
 #프로그래머스  
-&&문제 링크&&
+[코딩테스트 연습 - 조건에 맞는 도서와 저자 리스트 출력하기 | 프로그래머스 스쿨](https://school.programmers.co.kr/learn/courses/30/lessons/144854)
 
 ```sql
 -- 코드를 입력하세요
-
+SELECT BOOK_ID, AUTHOR_NAME, DATE_FORMAT(PUBLISHED_DATE,"%Y-%m-%d") AS PUBLISHED_DATE
+FROM BOOK AS b LEFT JOIN AUTHOR AS a ON b.AUTHOR_ID = a.AUTHOR_ID
+WHERE b.CATEGORY = "경제"
+ORDER BY PUBLISHED_DATE ASC;
 ```
 
-&&실행결과 이미지 첨부 자유&&
+![](https://i.imgur.com/CtPtLbh.png)
