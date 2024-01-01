@@ -33,4 +33,11 @@ SELECT 컬럼명 FROM 테이블 WHERE 컬럼명 LIKE '[A-C]'
 ## 프로그래머스
 #프로그래머스 
 https://school.programmers.co.kr/learn/courses/30/lessons/151137
-
+```sql
+-- 코드를 입력하세요
+SELECT CAR_TYPE, COUNT(CAR_ID) AS CARS
+FROM CAR_RENTAL_COMPANY_CAR
+WHERE OPTIONS LIKE '%시트%'
+GROUP BY CAR_TYPE
+ORDER BY CAR_TYPE ASC;
+```
