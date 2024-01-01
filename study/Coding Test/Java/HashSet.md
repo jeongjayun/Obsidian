@@ -56,8 +56,60 @@ HashSet<String> animals = new HashSet<>();
 ### HashSet 크기 구하기
 - `size()` 메소드를 사용하여 Hash의 크기를 구할 수 있다.
 ```java
-HashSet<Integer> set = new HashSet<Integer>(Arrays.asL)
+HashSet<Integer> set = new HashSet<Integer>(Arrays.asList(1,2,3));
+
+//set 크기 : 3
+System.out.println(set.size());
 ```
+
+### HashSet 요소 값 삭제
+- `remove(value)`와 `clear()` 메소드를 사용하여 Hash 값을 제거할 수 있다.
+```java
+HashSet<Integer> set = new HashSet<Integer>(Arrays.asList(1,2,3));
+
+// 값 1 제거
+set.remove(2);
+
+// 모든 값을 제거
+set.clear();
+```
+
+>[!note] 만약 삭제 하려는 값이
+>- HashSet 내부에 존재하면 그 값을 삭제하고 true를 반환한다.
+>- HashSet 내부에 존재하지 않으면 false 를 반환한다.
+
+### HashSet 요소 값 검색
+- 원하는 값에 대해 `contains(value)` 메소드를 통해 Hash 내부에 존재하는 지 확인이 가능하다.
+```java
+HashSet<Integer> set = new HashSet<Integer> (Arrays.asList(1,2,3));
+
+// set 내부에 값 1이 잆으면 true , 없으면 false 출력
+System.out.println(set.contains(1));
+```
+
+### HashSet 요소 값 출력
+- Set 컬렉션을 그냥 'print' 처리 할 경우 대괄호('[]')로 묶여 Set의 전체값이 출력된다.
+- 때문에 전체 객체를 대상으로 한번씩 반복해서 가져오는 `반복자 (Iterator)` 를 사용해 출력해야 한다.
+```java
+HashSet<Integer> set = new HashSet<Integer> (Arrays.asList(1,2,3));
+
+// 출력 결과 : [1,2,3]
+System.out.println(set);
+
+Integer iter = set.iterator();
+
+//hasNext() : 가져올 객체가 있으면 true, 없으면 false 리턴
+//next() : Iterator 에서 하나의 객체를 가져올 수 있는 메소드
+
+while(iter.hasNext()){
+	System.out.print(iter.next());
+}
+```
+
+# 참고
+[[JAVA] HashSet이란? & 사용법 정리](https://crazykim2.tistory.com/474) <br>
+[[Java] 자바 HashSet 사용 방법](https://psychoria.tistory.com/780) <br>
+[[Java] HashSet의 개념과 사용법 정리](https://velog.io/@acacia__u/hashSet) <br>
 
 # 백준 3052 나머지
 #백준 
