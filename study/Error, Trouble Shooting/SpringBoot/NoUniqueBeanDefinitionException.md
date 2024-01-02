@@ -125,7 +125,7 @@ rateDiscountPolicy, discountPolicy 중에 rateDiscountPolicy에 `@Primary` 어�
 ![](https://i.imgur.com/JpP7xyr.png)
 
 # 참고
-[[Spring] 스프링 조회한 빈(Bean)이 2개 이상인 경우 문제 해결 방법](https://ittrue.tistory.com/231)
+[[Spring] 스프링 조회한 빈(Bean)이 2개 이상인 경우 문제 해결 방법](https://ittrue.tistory.com/231) <br>
 [중복 오류 - 인프런](https://www.inflearn.com/questions/954940/중복-오류)
 
 # 느낀점
