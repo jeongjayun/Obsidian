@@ -1,4 +1,3 @@
-#미완료 
 
 ```text
 ***************************
@@ -120,10 +119,14 @@ Consider marking one of the beans as @Primary, updating the consumer to accept m
 새로운 오류가 나오고 전엔 통과했던 싱글톤 테스트 오류가 발생함 ...
 
 ### 시도 3
-
-
+rateDiscountPolicy, discountPolicy 중에 rateDiscountPolicy에 `@Primary` 어노테이션을 적용했다. 
 
 # 해결
+![](https://i.imgur.com/JpP7xyr.png)
 
 # 참고
+[[Spring] 스프링 조회한 빈(Bean)이 2개 이상인 경우 문제 해결 방법](https://ittrue.tistory.com/231)
 [중복 오류 - 인프런](https://www.inflearn.com/questions/954940/중복-오류)
+
+# 느낀점
+스프링 자체적으로 싱글톤을 유지하기 위한 기능이 있다고 백번 설명 듣는 것보다 이렇게 직접 오류 마주하니 훨씬 와닿는다.
