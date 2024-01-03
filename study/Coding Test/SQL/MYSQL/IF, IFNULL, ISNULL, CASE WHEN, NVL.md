@@ -22,6 +22,7 @@ IFNULL() 함수는 해당 필드의 값이 NULL을 반환할 때, 지정한 값�
 아래처럼 중첩해서 사용 할 수도 있다.
 
 ```sql
+SELECT IFNULL(column_name, IFNULL(column_name, '대체할 값')) FROM table_name;
 ```
 
 
@@ -44,3 +45,30 @@ ORDER BY AGE DESC, PT_NAME ASC;
 ```
 
 ![](https://i.imgur.com/LDHPyJH.png)
+
+# ISNULL
+`ISNULL(column_name, value)`
+```sql
+SELECT ISNULL(is_discount, 0) AS result;
+```
+is_discount 컬럼의 값이 NULL 이라면 0, 아니라면 is_discout의 값을 출력한다.
+
+# CASE WHEN
+```sql
+SELECT
+	CASE
+		WHEN permission_type_id = 1
+		THEN '관리자'
+		WHEN permission_type_id = 2
+		THEN '판매자'
+		ELSE '일반사용자'
+	END
+```
+- WHEN , THEN 은 쌍을 이루어 사용해야 한다.
+- WHEN (조건 혹은 값) THEN ~~ 은 여러번 사용할 수 있으며 마지막 ELSE는 모든 조건이 아닐 때 출력되는 값을 지정한다.
+
+# NVL
+```sql
+SELECT
+	NVL(user_name)
+```
