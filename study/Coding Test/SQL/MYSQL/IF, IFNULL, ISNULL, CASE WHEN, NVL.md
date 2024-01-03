@@ -70,5 +70,6 @@ SELECT
 # NVL
 ```sql
 SELECT
-	NVL(user_name)
+	NVL(user_name, 'no name') from users
 ```
+user_name 컬럼 값이 null 이면 no name 을 출력하고, NULL이 아니라면 user_name 컬럼 값을 출력한다.

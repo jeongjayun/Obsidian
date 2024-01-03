@@ -27,3 +27,16 @@ ORDER BY PUBLISHED_DATE ASC;
 ```
 
 ![](https://i.imgur.com/YeoExNi.png)
+
+# 프로그래머스 조건에 맞는 회원 수 구하기
+#프로그래머스  
+[코딩테스트 연습 - 조건에 맞는 회원수 구하기 | 프로그래머스 스쿨](https://school.programmers.co.kr/learn/courses/30/lessons/131535)
+
+```sql
+-- 코드를 입력하세요
+SELECT COUNT(USER_ID) AS USERS
+FROM USER_INFO
+WHERE AGE >= 20 AND AGE <=29 AND YEAR(JOINED) ='2021';
+```
+
+![](https://i.imgur.com/pV2CxdB.png)
