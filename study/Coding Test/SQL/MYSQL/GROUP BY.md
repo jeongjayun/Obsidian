@@ -36,7 +36,7 @@ SELECT 컬럼 FROM 테이블 WHERE 조건식 GROUP BY 그룹화할 컬럼;
 
 ## 컬럼 그룹화 후에 조건 처리
 ```sql
-SELECT 컬럼 
+SELECT 컬럼 FROM 테이블 GROUP BY 그룹화할 컬럼 HAVING 조건식;
 ```
 
 ## 조건 처리 후에 컬럼 그룹화 후에 조건 처리
