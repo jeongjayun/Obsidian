@@ -22,3 +22,31 @@ GROUP BY INGREDIENT_TYPE;
 ```
 
 ![](https://i.imgur.com/IGkH1jq.png)
+
+# 사용법
+## 컬럼 그룹화
+```sql
+SELECT 컬럼 FROM 테이블 GROUP BY 그룹화할 컬럼;
+```
+
+## 조건 처리 후에 컬럼 그룹화
+```sql
+SELECT 컬럼 FROM 테이블 WHERE 조건식 GROUP BY 그룹화할 컬럼;
+```
+
+## 컬럼 그룹화 후에 조건 처리
+```sql
+SELECT 컬럼 
+```
+
+## 조건 처리 후에 컬럼 그룹화 후에 조건 처리
+```sql
+
+```
+
+## ORDER BY가 존재하는 경우
+```sql
+
+```
+
+
