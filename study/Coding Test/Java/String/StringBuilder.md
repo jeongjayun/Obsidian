@@ -118,3 +118,27 @@ sb.trimToSize();
 # 참고
 [[Java] StringBuilder 사용법과 주요 메소드](https://myeongju00.tistory.com/61) <br>
 [StringBuffer(StringBuilder) 클래스 기본 및 사용 :: 양's World](https://yangbox.tistory.com/58)
+
+# 백준 2908
+#백준 
+[2908번: 상수](https://www.acmicpc.net/problem/2908)
+## 정답
+```java
+package baekjoon;  
+  
+import java.util.Scanner;  
+import java.util.StringTokenizer;  
+  
+public class No2908 {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+        String S = scanner.nextLine();  
+        StringTokenizer stringTokenizer = new StringTokenizer(S, " ");  
+  
+        int A = Integer.parseInt(new StringBuffer(stringTokenizer.nextToken()).reverse().toString());  
+        int B = Integer.parseInt(new StringBuffer(stringTokenizer.nextToken()).reverse().toString());  
+  
+        System.out.println(Math.max(A, B));  
+    }  
+}
+```
