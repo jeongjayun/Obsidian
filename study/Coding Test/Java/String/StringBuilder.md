@@ -43,13 +43,78 @@ String 객체가 2개 있을 때 `str1 + str2` 하면 새로운 String 을 생�
 	```
 
 # 주요 메소드
-## 문자열을 추가
+## 문자열
+### 문자열을 추가
 ```java
 StringBuilder sb = new StringBuilder();
 sb.append("abd");
 sb.append(4).append("\n");
 ```
 
+### offset 위치에 str 추가
+```java
+sb.insert(int offset, String str);
+sb.insert(2, "ccc);
+```
+
+### 인덱스에 위치한 문자열을 대체
+```java
+sb.replace(int index1, int index2, String str);
+sb.replace(3, 6, "hi");
+```
+
+## 인덱싱
+> 만약 파라미터가 하나라면? 해당 인덱스부터 끝까지 인덱싱한다. <br>
+> 두개라면? `start`부터 `end -1`까지 인덱싱한다.
+
+```java
+sb.substring(int start);
+sb.substring(int start, int end);
+
+sb.substring(5);
+sb.substring(3, 7);
+```
+
+### 인덱스에 위치한 문자 하나를 삭제
+```java
+sb.deleteCharAt(int index);
+sb.delectCharAt(3);
+```
+
+### `start` 부터 `end -1`까지의 문자를 삭제
+```java
+sb.delete(int start, int end);
+sb.delete(3, sb.length());
+```
+
+
+## 변환
+### String 으로 변환
+```java
+sb.toString();
+```
+
+### 해당 문자 전체를 뒤집기
+```java
+sb.reverse();
+```
+
+### index 위치의 문자를 s로 변경
+```java
+sb.setCharAt(int index, String s);
+```
+
+### 문자열 길이 조정
+현재 문자열보다 길게 조정하면 공백으로 채워지고, 현재 문자열보다 짧게 조정하면 나머지 문자는 삭제한다.
+```java
+sb.setLength(int len);
+```
+
+문자열이 저장된 char[] 배열 사이즈를 현재 문자열 길이와 동일하게 조정한다. String 클래스의 trim()이 앞 뒤 공백을 제거하는 것과 같이 공백 사이즈를 제공하는 것, 배열의 남는 사이즈는 공백이므로 문자열 뒷부분의 공백을 모두 제거해준다고 보면 된다.
+```java
+sb.trimToSize();
+```
 
 # 참고
-[[Java] StringBuilder 사용법과 주요 메소드](https://myeongju00.tistory.com/61)
+[[Java] StringBuilder 사용법과 주요 메소드](https://myeongju00.tistory.com/61) <br>
+[StringBuffer(StringBuilder) 클래스 기본 및 사용 :: 양's World](https://yangbox.tistory.com/58)
