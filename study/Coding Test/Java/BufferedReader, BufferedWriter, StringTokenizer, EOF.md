@@ -65,6 +65,49 @@ int b = Integer.parseInt(st.nextToken()); // 두번째 호출
 String array[] = s.split(" "); //공백마다 데이터 끊어서 배열에 넣음
 ```
 
+## 백준 1152 단어의 갯수
+#백준 
+[1152번: 단어의 개수](https://www.acmicpc.net/problem/1152)
+
+### 내가 쓴 오답
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+        String[] words = str.split(" ");
+        System.out.println(words.length);
+    }
+}
+```
+
+내가 틀렸던 이유는 예제 2번처럼 문장 앞에 '빈 문자열' 이 있는 경우도 split 에서 카운트해서 6이 아니라 7이 나왔기 때문.
+
+### 정답
+```java
+package baekjoon;  
+  
+import java.util.Scanner;  
+import java.util.StringTokenizer;  
+  
+public class No1152 {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+        String S = scanner.nextLine();  
+        scanner.close();  
+  
+        StringTokenizer st = new StringTokenizer(S, " ");  
+        System.out.println(st.countTokens());  
+    }  
+}
+```
+
+>[!note] countTokens
+>토큰의 개수를 셀 수 있다.
+
+
 # EOF (End Of File)개념
 > 입력에서 더 이상 읽을 수 있는 데이터가 없을 때
 > = null 을 뜻한다.
