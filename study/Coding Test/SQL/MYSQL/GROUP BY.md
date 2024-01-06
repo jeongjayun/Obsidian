@@ -41,12 +41,13 @@ SELECT 컬럼 FROM 테이블 GROUP BY 그룹화할 컬럼 HAVING 조건식;
 
 ## 조건 처리 후에 컬럼 그룹화 후에 조건 처리
 ```sql
-
+SELECT 컬럼 FROM 테이블 WHERE 조건식 GROUP BY 그룹화할 컬럼 HAVING 조건식;
 ```
 
 ## ORDER BY가 존재하는 경우
 ```sql
-
+SELECT 컬럼 FROM 테이블 [WHERE 조건식]
+GROUP BY 그룹화할 컬럼 [HAVING 조건식] ORDER BY 컬럼1 [, 컬럼2, 컬럼3 ...];
 ```
 
 
